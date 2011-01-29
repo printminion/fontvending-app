@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<!--<ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" 
+			android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" 
+			android:layout_margin="10dip"></ImageView> -->
+
+		<com.example.fontvending.client.FontView
+			android:layout_centerInParent="true" android:text="test" android:id="@+id/lblExample"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:minHeight="60dip" android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip">
+
+		</com.example.fontvending.client.FontView>
+
+
+		<Spinner android:id="@+id/spinner1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Spinner>
+		<EditText android:id="@+id/editText1" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text="abcdefABCEDF12345"></EditText>
+		<TextView android:layout_height="wrap_content"
+			android:text="use default location" android:background="#cccccc"
+			android:layout_width="fill_parent" android:textColor="#000000" android:textStyle="bold" android:padding="5dip" android:layout_marginTop="10dip"></TextView>
+		<CheckBox android:id="@+id/checkBox1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="/sdcard/fonts/"
+			android:onClick="onChangeFontsLocation"></CheckBox>
+		<Button android:id="@+id/button1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:onClick="onAddFontsToDefaultLocation"
+			android:text="add fonts: default location"></Button>
+		<TextView android:layout_height="wrap_content"
+			android:text="use custom location" android:background="#cccccc"
+			android:layout_width="fill_parent" android:padding="5dip"
+			android:textColor="#000000" android:textStyle="bold" android:layout_marginTop="10dip"></TextView>
+		<CheckBox android:layout_height="wrap_content" android:id="@+id/checkBox2"
+			android:layout_width="wrap_content" android:text="/sdcard/fonts_custom"
+			android:onClick="onChangeFontsLocation"></CheckBox>
+		<Button android:id="@+id/button2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:onClick="onAddFontsToCustomLocation"
+			android:text="add fonts: custom location"></Button>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mkFontVendingClient</string>
+
+	<string name="application_description">Uses:com.kupriyanov.fontvending</string>
+
+
+	<string name="dialog_install_fontsvending_title">Install Fonts Vending</string>
+	<string name="dialog_install_fontsvending">You should install free Fonts Vending from the Android Market.</string>
+    
+	<string name="no_text">no sample text</string>
+    
+    
+</resources>
