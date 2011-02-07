@@ -10,15 +10,15 @@ APK of the Sample [FontVendingClient FontVending Client]:[http://code.google.com
 
 
 
-= Call font Vending =
-== Download into default folder  ==
+= Call Font Vending =
+== Download fonts into default folder  ==
 {{{
 Intent intent = new Intent(android.content.Intent.ACTION_GET_CONTENT);
 intent.setPackage("com.kupriyanov.fontvending");
 intent.setType("font/*");
 startActivityForResult(intent, REQUEST_NEW_FONTS);
 }}}
-== Download into custom folder  ==
+== Download fonts into custom folder  ==
 {{{
 Intent intent = new Intent(android.content.Intent.ACTION_GET_CONTENT);
 intent.setPackage("com.kupriyanov.fontvending");
@@ -29,7 +29,7 @@ intent.putExtra("com.kupriyanov.fontvending.extra.CLIENT_PACKAGE", "com.your.app
 
 startActivityForResult(intent, REQUEST_NEW_FONTS);
 }}}
-== Get installation result ==
+== Get download result ==
 
 {{{
 
@@ -60,5 +60,3 @@ startActivityForResult(intent, REQUEST_NEW_FONTS);
                 super.onActivityResult(requestCode, resultCode, data);
         }
 }}}
-
-
