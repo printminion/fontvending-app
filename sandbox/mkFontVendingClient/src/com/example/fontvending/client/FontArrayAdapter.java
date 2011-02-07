@@ -18,7 +18,6 @@ public class FontArrayAdapter<T> extends ArrayAdapter<String> {
 	private TextView txtLabel;
 	private Typeface typeface;
 	private int minHeight;
-	private int fontSize;
 	private String sample;
 
 	public FontArrayAdapter(Context context, int textViewResourceId, String[] objects) {
@@ -48,7 +47,7 @@ public class FontArrayAdapter<T> extends ArrayAdapter<String> {
 
 	private void init() {
 		minHeight = (int) FontView.dipToPx(getContext(), 60);
-		fontSize = (int) FontView.dipToPx(getContext(), 40);
+//		fontSize = (int) FontView.dipToPx(getContext(), 40);
 	}
 
 	public void setSampleText(String text) {

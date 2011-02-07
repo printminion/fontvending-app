@@ -151,8 +151,8 @@ public class HomeActivity extends Activity {
 		 * install into custom folder
 		 */
 		if (checkBox2.isChecked()) {
-			intent.putExtra("CLIENT_PACKAGE", FONTCLIENT_PACKAGE_NAME);
-			intent.putExtra("TARGET_PATH", mCurrentFontFolder);
+			intent.putExtra("com.kupriyanov.fontvending.extra.CLIENT_PACKAGE", FONTCLIENT_PACKAGE_NAME);
+			intent.putExtra("com.kupriyanov.fontvending.extra.TARGET_PATH", mCurrentFontFolder);
 		}
 
 		startActivityForResult(intent, REQUEST_NEW_FONTS);
@@ -174,8 +174,8 @@ public class HomeActivity extends Activity {
 		intent.setPackage(FONTVENDING_PACKAGE_NAME);
 		intent.setType("font/*");
 
-		intent.putExtra("CLIENT_PACKAGE", FONTCLIENT_PACKAGE_NAME);
-		intent.putExtra("TARGET_PATH", mCurrentFontFolder);
+		intent.putExtra("com.kupriyanov.fontvending.extra.CLIENT_PACKAGE", FONTCLIENT_PACKAGE_NAME);
+		intent.putExtra("com.kupriyanov.fontvending.extra.TARGET_PATH", mCurrentFontFolder);
 
 		startActivityForResult(intent, REQUEST_NEW_FONTS);
 
@@ -307,5 +307,4 @@ public class HomeActivity extends Activity {
 
 		return fontNames;
 	}
-
 }
