@@ -1,14 +1,64 @@
-#summary One-sentence summary of this page.
 #labels Featured
+#sample demo client which uses Font Vending App 
 
-= Introduction =
+= Check out svn source =
+{{{
+svn checkout http://fontvending-app.googlecode.com/svn/sandbox/mkFontVendingClient .
+}}}
 
-Add your content here.
+APK of the Sample [FontVendingClient FontVending Client]:[http://code.google.com/p/fontvending-app/downloads/detail?name=mkFontVendingClient_v1.0.apk&can=2&q= mkFontVendingClient_v1.0.apk]
 
 
-= Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Call font Vending =
+== Download into default folder  ==
+{{{
+Intent intent = new Intent(android.content.Intent.ACTION_GET_CONTENT);
+intent.setPackage("com.kupriyanov.fontvending");
+intent.setType("font/*");
+startActivityForResult(intent, REQUEST_NEW_FONTS);
+}}}
+== Download into custom folder  ==
+{{{
+Intent intent = new Intent(android.content.Intent.ACTION_GET_CONTENT);
+intent.setPackage("com.kupriyanov.fontvending");
+intent.setType("font/*");
+
+intent.putExtra("com.kupriyanov.fontvending.extra.CLIENT_PACKAGE", "com.your.app.package.name");
+                        intent.putExtra("com.kupriyanov.fontvending.extra.TARGET_PATH", "/sdcard/some_custom_location");
+
+startActivityForResult(intent, REQUEST_NEW_FONTS);
+}}}
+== Get installation result ==
+
+{{{
+
+    @Override
+        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+                if (requestCode == REQUEST_NEW_FONTS) {
+
+                        switch (resultCode) {
+                        case RESULT_VENDING_FONT_INSTALLED:
+                                Toast.makeText(getApplicationContext(), "some fonts are installed", Toast.LENGTH_SHORT).show();
+                                populateSpinner();
+
+                                break;
+                        case RESULT_VENDING_FONT_UNINSTALLED:
+                                Toast.makeText(getApplicationContext(), "some fonts are removed", Toast.LENGTH_SHORT).show();
+
+                                populateSpinner();
+
+                                break;
+
+                        default:
+                                Toast.makeText(getApplicationContext(), "no font installed or removed", Toast.LENGTH_SHORT).show();
+
+                                break;
+                        }
+                }
+                super.onActivityResult(requestCode, resultCode, data);
+        }
+}}}
+
+
