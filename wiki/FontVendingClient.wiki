@@ -60,3 +60,13 @@ startActivityForResult(intent, REQUEST_NEW_FONTS);
                 super.onActivityResult(requestCode, resultCode, data);
         }
 }}}
+
+=Market Search=
+If you want that your application will be listed in Font Vending market search just put "Uses:com.kupriyanov.fontvending" in your application description and the market description.
+
+See: http://code.google.com/p/fontvending-app/source/browse/sandbox/mkFontVendingClient/AndroidManifest.xml
+and
+http://code.google.com/p/fontvending-app/source/browse/sandbox/mkFontVendingClient/res/values/strings.xml
+{{{
+<string name="application_description">Uses:com.kupriyanov.fontvending</string>
+}}}
