@@ -1,15 +1,15 @@
 #labels Featured
 #sample demo client which uses Font Vending App 
 
-= Check out svn source =
+= Source =
+ * Svn
 {{{
 svn checkout http://fontvending-app.googlecode.com/svn/sandbox/mkFontVendingClient .
 }}}
 
-APK of the Sample [FontVendingClient FontVending Client]:[http://code.google.com/p/fontvending-app/downloads/detail?name=mkFontVendingClient_v1.0.apk&can=2&q= mkFontVendingClient_v1.0.apk]
+ * Source of example client [http://code.google.com/p/fontvending-app/downloads/detail?name=mkFontVendingClient.zip&can=2&q=#makechanges mkFontVendingClient.zip]
 
-Source of example client
-[http://fontvending-app.googlecode.com/files/mkFontVendingClient.zip mkFontVendingClient.zip]
+ * Compiled version: [http://code.google.com/p/fontvending-app/downloads/detail?name=mkFontVendingClient_v1.0.apk&can=2&q=#makechanges mkFontVendingClient_v1.0.apk]
 
 
 = Call Font Vending =
