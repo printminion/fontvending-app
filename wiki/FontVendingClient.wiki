@@ -8,6 +8,8 @@ svn checkout http://fontvending-app.googlecode.com/svn/sandbox/mkFontVendingClie
 
 APK of the Sample [FontVendingClient FontVending Client]:[http://code.google.com/p/fontvending-app/downloads/detail?name=mkFontVendingClient_v1.0.apk&can=2&q= mkFontVendingClient_v1.0.apk]
 
+Source of example client
+[http://fontvending-app.googlecode.com/files/mkFontVendingClient.zip mkFontVendingClient.zip]
 
 
 = Call Font Vending =
