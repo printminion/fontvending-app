@@ -1,0 +1,8 @@
+#These apps using fonts from /sdcard/fonts
+
+
+= Apps using external fonts  =
+
+  * [https://market.android.com/details?id=com.kupriyanov.imagetag&feature=search_result ImageTag]
+  * [https://market.android.com/details?id=org.geometerplus.zlibrary.ui.android FBReader]
+  * [https://market.android.com/details?id=org.coolreader&feature=search_result Cool Reader]
