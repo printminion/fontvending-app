@@ -6,3 +6,4 @@
   * [https://market.android.com/details?id=com.kupriyanov.imagetag ImageTag]
   * [https://market.android.com/details?id=org.geometerplus.zlibrary.ui.android FBReader]
   * [https://market.android.com/details?id=org.coolreader Cool Reader]
+  * [https://market.android.com/details?id=no.allegiance.fonttest Fontest]
